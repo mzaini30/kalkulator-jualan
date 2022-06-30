@@ -8,6 +8,8 @@ import unocss from "unocss/vite";
 import yaml from "vite-plugin-yaml2";
 import apply from "@unocss/transformer-directives";
 import Prism from "markdown-it-prism";
+import presetIcons from "@unocss/preset-icons";
+import { presetUno } from "unocss";
 
 const hostname = "http://localhost:3000/";
 
@@ -17,6 +19,7 @@ export default defineConfig({
     yaml(),
     unocss({
       transformers: [apply()],
+      presets: [presetIcons(), presetUno()],
     }),
     legacy(),
     vue({
