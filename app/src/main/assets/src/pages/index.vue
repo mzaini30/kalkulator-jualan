@@ -3,6 +3,7 @@
 // id, nilai, banyak
 import { Ref, ref, onUpdated } from "vue";
 import Swal from "sweetalert2";
+const { stringify, parse } = JSON;
 
 type List = {
   id: number;
