@@ -22,6 +22,16 @@ const total: Ref<number> = ref(0);
 const aktif: Ref<number> = ref(1);
 const jalankanScroll: Ref<boolean> = ref(false);
 
+function init() {
+  if (localStorage.list) {
+    list.value = parse(localStorage.list);
+  }
+  if (localStorage.total) {
+    total.value = parse(localStorage.total);
+  }
+}
+init();
+
 function tambahList(): void {
   const idBaru = Math.random();
   list.value.push({
@@ -75,6 +85,8 @@ onUpdated(() => {
     kumpulinTotal += +x.nilai * x.banyak;
   }
   total.value = kumpulinTotal;
+  localStorage.list = stringify(list.value);
+  localStorage.total = stringify(total.value);
 });
 </script>
 
