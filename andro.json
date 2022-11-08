@@ -1,8 +1,8 @@
 {
   "folder": "dist",
-  "judul": "Aplikasi",
-  "admobApplication": "ca-app-pub-3940256099942544~3347511713",
-  "admobBanner": "ca-app-pub-3940256099942544/6300978111",
-  "versi": 1,
-  "id": "com.user.app"
+  "judul": "Kalkulator Jualan",
+  "admobApplication": "ca-app-pub-9804745932553029~8496692021",
+  "admobBanner": "ca-app-pub-9804745932553029/9618202009",
+  "versi": 4,
+  "id": "com.mzaini30.kalkulatorjualan"
 }

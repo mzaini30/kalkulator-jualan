@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build --base /assets/dist/ && tsx script/afterBuild.ts",
+    "build": "vue-tsc --noEmit && vite build --base /assets/ && tsx script/afterBuild.ts",
     "build:vercel": "vue-tsc --noEmit && vite build && tsx script/afterBuild.ts",
     "preview": "vite preview"
   },
